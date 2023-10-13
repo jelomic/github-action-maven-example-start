@@ -51,4 +51,4 @@ jobs:
       - name: Build Container image
         run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
       - name: Publish Docker image
-        run: docker push ${{ secrets.DOCKER_REPO }}
+        run: docker push ${{ secrets.DOCKER_REPO }} 
